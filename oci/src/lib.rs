@@ -15,7 +15,7 @@ use serde_json::Value;
 //use nix::unistd::{Gid,Pid,Uid};
 
 fn is_false(b: &bool) -> bool {
-    !b
+    !*b
 }
 
 #[derive(Serialize, Deserialize, Debug)]
